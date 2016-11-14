@@ -1,0 +1,51 @@
+{
+	"name": "SearchBox",
+	"version": "0.1.2",
+	"author": [
+		"[http://kwiki.co.il Kwiki]",
+		"[[mw:user:HagaiAsaban|Hagai Asaban]]",
+		"[[mw:user:Yacohen|Yacohen]]"
+	],
+	"url": "doalogue-kwiki/SearchBox",
+	"descriptionmsg": "search-box-desc",
+	"license-name": "GPL v2",
+	"type": "other",
+	"AutoloadClasses": {
+		"SearchBoxHooks": "SearchBox.hooks.php"
+	},
+	"Hooks": {
+		"BeforePageDisplay": [
+			"SearchBoxHooks::onBeforePageDisplay"
+		]
+	},
+	"MessagesDirs": {
+		"SearchBox": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"ext.SearchBox": {
+			"dependencies": [
+				"mediawiki.searchSuggest",
+				"mediawiki.Title"
+			],
+			"scripts": [
+				"lib/jquery.sumoselect.js",
+				"modules/ext.SearchBox.js"        
+			],
+			"styles": [
+				"lib/jquery.sumoselect.css",
+                "modules/ext.SearchBox.css"
+			],
+			"templates": {
+				"search-box.mustache" : "templates/search-box.mustache"
+			}
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "SearchBox"
+	},
+	"SpecialPages": {},
+	"manifest_version": 1
+}
