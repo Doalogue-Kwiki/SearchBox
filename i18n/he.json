@@ -4,5 +4,10 @@
 			"Hagai Asaban"
 		]
 	},
-    "search-box-desc": "Search Box Extension"
+    "search-box-desc": "Search Box Extension",
+    "main-namespace": "(ראשי)",
+    "no-results": "אין תוצאות לחיפוש המבוקש",
+    "results-title": " תוצאת חיפוש עבור ",
+    "results-in-namespaces": " עבור מרחבי שם : ",
+    "results-in-categories": " עבור קטגוריות : "
 }

@@ -26,10 +26,11 @@
 	"ResourceModules": {
 		"ext.SearchBox": {
 			"dependencies": [
-				"mediawiki.searchSuggest",
+                "ext.MaterialDialog",
 				"mediawiki.Title"
 			],
 			"scripts": [
+                "lib/moment.min.js",
 				"lib/jquery.sumoselect.js",
 				"modules/ext.SearchBox.js"        
 			],
@@ -37,9 +38,18 @@
 				"lib/jquery.sumoselect.css",
                 "modules/ext.SearchBox.css"
 			],
+            "messages": [
+                "main-namespace",
+                "no-results",
+                "results-title",
+                "results-in-namespaces",
+                "results-in-categories"
+            ],
 			"templates": {
-				"search-box.mustache" : "templates/search-box.mustache"
-			}
+				"search-box.mustache" : "templates/search-box.mustache",
+                "results.mustache" : "templates/results.mustache"
+            }
+            
 		}
 	},
 	"ResourceFileModulePaths": {

@@ -1,0 +1,52 @@
+<div id="searchResult">
+    <h3>{{resultsTitle}} - {{searchQuery}}</h3>
+    <h5 class="topBorder">
+    {{#HasNamespaces}}        
+        <i class="material-icons">&#xE53B;</i>
+        {{resultsInNamespaces}} 
+        <span class="filtersText">
+            {{selectedNamespaces}}
+        </span>        
+    {{/HasNamespaces}}
+    
+    {{#HasCategories}}
+        <i class="material-icons">&#xE41D;</i>
+        {{resultsInCategories}} 
+        <span class="filtersText">
+            {{selectedCategories}}
+        </span>
+    {{/HasCategories}}
+    </h5>
+    
+    {{#hasResults}}
+        <ul class="results-list">
+            {{#results}}
+            <li class="result-item topBorder">
+                <a href="/{{title}}" class="result-link" >
+                    {{#hasTitleSnippet}}
+                        {{{titlesnippet}}}
+                    {{/hasTitleSnippet}}
+                    
+                    {{^hasTitleSnippet}}  
+                        {{title}}
+                    {{/hasTitleSnippet}}  
+                </a>
+
+                <div class="sinppet">
+                    <span class="lastUpdate">
+                        {{lastUpdate}} - ({{wordcount}} מילים) 
+                    </span>
+                    {{{snippet}}}
+                    {{#hasCategorySnippet}}
+                    <span> (<i class="material-icons category-icon-snippet">&#xE41D;</i> קטגוריה {{{categorysnippet}}}) </span>
+                    {{/hasCategorySnippet}}
+                </div>                
+            </li>
+            {{/results}} 
+        </ul>    
+    {{/hasResults}} 
+       
+    {{^hasResults}}
+    <h5 style="text-decoration: underline;">{{noResults}}</h5>
+    {{/hasResults}}
+</div>

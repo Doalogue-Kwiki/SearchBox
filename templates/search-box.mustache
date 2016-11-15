@@ -1,170 +1,39 @@
-<div class="has-form">
-    <form action="/w/index.php" id="searchform" class="mw-search">
-        <div class="row collapse">
-            <div class="small-12 columns">
-                <div id="dropdown-menu">
-                    <label class="filtersLabels"
-                           for="namespaces">מרחבי שם</label>
-                    <select multiple="multiple" id="namespaceSelector" name="namespaces" class="SumoUnder" tabindex="-1">
-                        <option value="0">(ראשי)</option>
-                        <option value="-2">מדיה</option>
-                        <option value="-1">מיוחד</option>
-                        <option value="1">שיחה</option>
-                        <option value="2">משתמש</option>
-                        <option value="3">שיחת משתמש</option>
-                        <option value="4">net wiki</option>
-                        <option value="6">קובץ</option>
-                        <option value="8">מדיה ויקי</option>
-                        <option value="14">קטגוריה</option>
-                        <option value="274">Widget</option>
-                        <option value="2600">נושא</option>
-                    </select>
-                    <label class="filtersLabels"
-                           for="categories">קטגוריות</label>
-                    <select multiple="multiple" name="categories" id="categoriesSelector" class="SumoUnder" tabindex="-1">
-                        <option value="API">AFASFSAF</option>
-                        <option value="API">API</option>
-                        <option value="Accessibility">Accessibility</option>
-                        <option value="CSS">CSS</option>
-                        <option value="Core">Core</option>
-                        <option value="HTML">HTML</option>
-                        <option value="Inside">Inside</option>
-                        <option value="JQuery">JQuery</option>
-                        <option value="JS">JS</option>
-                        <option value="JavaScript">JavaScript</option>
-                        <option value="Kwiki">Kwiki</option>
-                        <option value="Network">Network</option>
-                        <option value="OO">OO</option>
-                        <option value="OO.js">OO.js</option>
-                        <option value="OOjs.ui">OOjs.ui</option>
-                        <option value="Old">Old</option>
-                        <option value="RestBASE">RestBASE</option>
-                        <option value="Test">Test</option>
-                        <option value="UI">UI</option>
-                        <option value="VisualEditor">VisualEditor</option>
-                        <option value="Wiki">Wiki</option>
-                        <option value="Youtube">Youtube</option>
-                        <option value="אבדוקציה">אבדוקציה</option>
-                        <option value="אודות">אודות</option>
-                        <option value="אינפוגרפיקה">אינפוגרפיקה</option>
-                        <option value="אקוסיסטם">אקוסיסטם</option>
-                        <option value="אתגר הסתגלותי">אתגר הסתגלותי</option>
-                        <option value="אתגר טכני">אתגר טכני</option>
-                        <option value="בדיקה">בדיקה</option>
-                        <option value="בדיקה 2">בדיקה 2</option>
-                        <option value="בדיקה חדשה">בדיקה חדשה</option>
-                        <option value="בדיקה נוספת">בדיקה נוספת</option>
-                        <option value="בינה ארגונית">בינה ארגונית</option>
-                        <option value="בלוגוספירה">בלוגוספירה</option>
-                        <option value="בעיה טכנית">בעיה טכנית</option>
-                        <option value="דפים מיוחדים">דפים מיוחדים</option>
-                        <option value="דפים עם קישורים שבורים לקבצים">דפים עם קישורים שבורים לקבצים</option>
-                        <option value="דפים עם שגיאות בצביעת קוד">דפים עם שגיאות בצביעת קוד</option>
-                        <option value="האתגר החבוי">האתגר החבוי</option>
-                        <option value="הבדיקה">הבדיקה</option>
-                        <option value="הכללה">הכללה</option>
-                        <option value="הכשרה">הכשרה</option>
-                        <option value="המנעות מעבודה">המנעות מעבודה</option>
-                        <option value="המרפסת">המרפסת</option>
-                        <option value="הסתגלות">הסתגלות</option>
-                        <option value="העבודה במרכז">העבודה במרכז</option>
-                        <option value="העורך החזותי">העורך החזותי</option>
-                        <option value="העלאה">העלאה</option>
-                        <option value="הצעות מחיר">הצעות מחיר</option>
-                        <option value="הרחבות">הרחבות</option>
-                        <option value="הרשאות">הרשאות</option>
-                        <option value="השפעה">השפעה</option>
-                        <option value="התאמה">התאמה</option>
-                        <option value="ויקי">ויקי</option>
-                        <option value="חברתי-כלכלי">חברתי-כלכלי</option>
-                        <option value="חדש">חדש</option>
-                        <option value="חדש2">חדש2</option>
-                        <option value="חדש3">חדש3</option>
-                        <option value="חדש4">חדש4</option>
-                        <option value="חשד">חשד</option>
-                        <option value="חשיבה בסיסית">חשיבה בסיסית</option>
-                        <option value="טבלת הפיצה">טבלת הפיצה</option>
-                        <option value="טכני">טכני</option>
-                        <option value="טמפרטורה">טמפרטורה</option>
-                        <option value="טק קריירה">טק קריירה</option>
-                        <option value="טק-קריירה">טק-קריירה</option>
-                        <option value="יוטיוב">יוטיוב</option>
-                        <option value="יזמות">יזמות</option>
-                        <option value="כניסה">כניסה</option>
-                        <option value="לא">לא</option>
-                        <option value="מדיה ויקי">מדיה ויקי</option>
-                        <option value="מדיה-ויקי">מדיה-ויקי</option>
-                        <option value="מושג">מושג</option>
-                        <option value="מישוב">מישוב</option>
-                        <option value="ממשק">ממשק</option>
-                        <option value="מנהיגות">מנהיגות</option>
-                        <option value="מנהיגות הסתגלותית">מנהיגות הסתגלותית</option>
-                        <option value="מסוגלות טכנולוגית">מסוגלות טכנולוגית</option>
-                        <option value="מסמכים">מסמכים</option>
-                        <option value="מערכות">מערכות</option>
-                        <option value="מערכות סבוכות">מערכות סבוכות</option>
-                        <option value="מפה מושגית">מפה מושגית</option>
-                        <option value="מצגות">מצגות</option>
-                        <option value="מרכז פרח">מרכז פרח</option>
-                        <option value="משובים">משובים</option>
-                        <option value="מתדולוגיה">מתדולוגיה</option>
-                        <option value="מתודולוגיה">מתודולוגיה</option>
-                        <option value="ניהול">ניהול</option>
-                        <option value="ניסוי">ניסוי</option>
-                        <option value="סטארט אפ">סטארט אפ</option>
-                        <option value="סיפור">סיפור</option>
-                        <option value="סמכות">סמכות</option>
-                        <option value="סנסורינג">סנסורינג</option>
-                        <option value="סרטונים">סרטונים</option>
-                        <option value="עולם סבוך">עולם סבוך</option>
-                        <option value="עורך חזותי">עורך חזותי</option>
-                        <option value="עיצוב">עיצוב</option>
-                        <option value="עמוד ראשי">עמוד ראשי</option>
-                        <option value="פיתוח ידע">פיתוח ידע</option>
-                        <option value="פער רלוונטיות">פער רלוונטיות</option>
-                        <option value="פרדיגמה">פרדיגמה</option>
-                        <option value="פרוייקטים">פרוייקטים</option>
-                        <option value="פרזי">פרזי</option>
-                        <option value="צוות שילובי">צוות שילובי</option>
-                        <option value="צירופים">צירופים</option>
-                        <option value="צירי ההכשרה">צירי ההכשרה</option>
-                        <option value="צפת">צפת</option>
-                        <option value="קאנון">קאנון</option>
-                        <option value="קורסים והכשרות">קורסים והכשרות</option>
-                        <option value="קטגוריה ארוכה במיוחד">קטגוריה ארוכה במיוחד</option>
-                        <option value="קטגוריה ארוכה מאוד">קטגוריה ארוכה מאוד</option>
-                        <option value="קטגוריות">קטגוריות</option>
-                        <option value="קינפין">קינפין</option>
-                        <option value="רחבת הריקודים">רחבת הריקודים</option>
-                        <option value="רשתות חברתיות">רשתות חברתיות</option>
-                        <option value="ש">ש</option>
-                        <option value="שולחן עגול">שולחן עגול</option>
-                        <option value="שועליות">שועליות</option>
-                        <option value="שיח מומחים">שיח מומחים</option>
-                        <option value="שילוביות">שילוביות</option>
-                        <option value="שינויי ליבה">שינויי ליבה</option>
-                        <option value="שפות">שפות</option>
-                        <option value="שקף ה-V">שקף ה-V</option>
-                        <option value="תבניות">תבניות</option>
-                        <option value="תהליך הלמידה">תהליך הלמידה</option>
-                        <option value="תהליכי עבודה">תהליכי עבודה</option>
-                        <option value="תחומי המכון">תחומי המכון</option>
-                        <option value="תיאוריה">תיאוריה</option>
-                        <option value="תכניות עבודה">תכניות עבודה</option>
-                        <option value="תכנית עבודה">תכנית עבודה</option>
-                        <option value="תפיסת הזרז">תפיסת הזרז</option>
-                        <option value="תרגום">תרגום</option>
-                    </select>
-                </div>
-                <a id="filterBtn" role="button" class="button success filterBtn btnIcon" title="מסננים">
-                    <i id="icon" class="material-icons">&#xE152;</i>
-                </a>
-                <input type="search" name="search" placeholder="חיפוש" title="חיפוש בוויקי פנימי דואלוג [alt-shift-f]" accesskey="f" id="searchInput" autocomplete="off">
-                <button type="submit" title="חיפוש" class="button success btnIcon">
-                    <i class="material-icons">&#xE8B6;</i>
-                </button>
+<div id="searchBoxContainer">
+    <div class="row collapse">
+        <div class="small-6 columns">
+            <div id="dropdown-menu">
+                <label class="filtersLabels"
+                       for="namespaces">
+                    <i class="material-icons">&#xE53B;</i> מרחבי שם
+                </label>
+                <select multiple="multiple" id="namespaceSelector" name="namespaces" class="SumoUnder" tabindex="-1">
+                    {{#namespaces}}
+                    <option value="{{value}}">{{text}}</option>
+                    {{/namespaces}} 
+                </select>
+                <label class="filtersLabels"
+                       for="categories">
+                    <i class="material-icons">&#xE41D;</i> קטגוריות
+                </label>
+                <select multiple="multiple" name="categories" id="categoriesSelector" class="SumoUnder" tabindex="-1">
+                    {{#categories}} 
+                    <option value="{{.}}">{{.}}</option>
+                    {{/categories}}                    
+                </select>
             </div>
+            <div id="searchBoxHeader">
+                {{#isFilterVisible}}
+                <a id="filterBtn" role="button" class="btnIcon mw-ui-button" title="{{filterBtnPopupTitle}}">
+                        <i class="fa fa-filter" aria-hidden="true"></i>
+                    </a>
+                {{/isFilterVisible}}
 
+                <input type="search" name="search" placeholder="{{searchInputPlaceholder}}" title="{{searchInputPopupTitle}}" accesskey="f" id="searchBoxInput" autocomplete="off" class="mw-ui-input mw-ui-input-inline">
+
+                <a id="searchButton" role="button" class="btnIcon mw-ui-button" title="{{searchBtnPopupTitle}}">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </a>
+            </div>
         </div>
-    </form>
+    </div>
 </div>

@@ -4,5 +4,10 @@
 			"Hagai Asaban"
 		]
 	},
-    "search-box-desc": "Search Box Extension"
+    "search-box-desc": "Search Box Extension",
+    "main-namespace": "(Main)",
+    "no-results": "No Results!",
+    "results-title": " Result for ",
+    "results-in-namespaces": " Search In Namespaces : ",
+    "results-in-categories": " Search In Categories : "
 }
